@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: hsl(300, 24%, 96%);
+    font-family: 'Spartan', sans-serif;
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg) ;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    
+}
+
+
+.wrapper{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.inner-wrapper-a{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.wrap-a h2{
+    font-size: 2.4rem;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.wrap-a p{
+    margin: 30px 0;
+    font-weight: 500;
+    font-size: 1em;
+    color: hsl(275, 9%, 75%);
+    line-height: 1.4em;
+}
+
+
+.rating-a,.rating-b,.rating-c{
+    background-color: hsl(273, 21%, 92%);
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 20px 0;
+}
+
+.stars{
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.inner-wrapper-b{
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+.inner-wrapper-b p{
+    margin-top: 25px;
+    line-height: 2em;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.inner-wrapper-b h6{
+    font-size: .85em;
+}
+
+
+.review-sec-a,.review-sec-b,.review-sec-c{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.author-info{
+    margin-left: 25px;
+}
+
+
+.author-info h4{
+    font-size: .9em;
+    padding-bottom: 4px;
+}
+
+
+.author{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.vb{
+    color: hsl(333, 80%, 67%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrap-b{
+    font-size: 23px;
+}
+
+.wrap-b h6{
+    color:hsl(300, 43%, 22%) ;
+}
+
+.bio-data{
+    display: flex;
+    align-items: center;
+}
+
+.attribution a:hover{
+    cursor: pointer;
+    color: hsl(303, 10%, 53%);
+}   
+
+@media screen and (min-width: 500px){
+    .wrapper{
+        width: 80%;
+        
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    body{
+        background-color: hsl(300, 24%, 96%);
+        font-family: 'Spartan', sans-serif;
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg) ;
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+        background-size:  500px, 75%;
+    }
+
+
+    .wrapper{
+        width: 85%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .inner-wrapper-a{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        position: relative;
+        margin: 120px 0 30px;
+
+    }
+
+    .wrap-a {
+        width:400px ;
+    }
+
+    .wrap-a h2{
+        width:350px ;
+    }
+
+    .wrap-a p{
+        font-size: .8em;
+        line-height: 1.8em;
+    }
+
+    .rating-a{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 7px;
+        position: relative;
+        left: -120px;
+        
+    }
+    
+
+    .rating-a h6{
+        margin-left: 30px;
+        font-size: .6em;
+    }
+
+    .rating-b{
+        display: flex;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 7px;
+        position: relative;
+        left: -60px;
+    }
+
+    .rating-b h6{
+        margin-left: 30px;
+        font-size: .6em;
+    }
+
+    .rating-c{
+        display: flex;
+        width: 400px;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 7px;
+    }
+
+    .rating-c h6{
+        margin-left: 30px;
+        font-size: .6em;
+    }
+
+    .inner-wrapper-b{
+        grid-auto-rows: minmax(50px, auto);
+
+    }
+
+    review-sec-a,.review-sec-b,.review-sec-c{
+        padding: 35px;
+    }
+
+    .review-sec-a{
+        grid-column: 1/5;
+        
+      
+    }
+
+    .review-sec-b{
+        grid-column: 5/9;
+       
+    }
+
+    .review-sec-c{
+        grid-column: 9/13;
+       
+    }
+}
+
